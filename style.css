@@ -1,0 +1,59 @@
+/* bowser style override */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* styling body  */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background:#0a0f1c; */
+    height: 100vh;
+
+}
+/* parent of a button  */
+.container{
+    display: grid;
+    grid-template-columns: repeat(15,50px);
+    grid-gap: 5px;
+    background: #1C2541;
+    padding: 15px;
+    border-radius:12px;
+    border: 1px solid #1e293b;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+/* specific button Styling  */
+button{
+    font-family: 'Times New Roman', Times, serif;
+    background: #1e293b;
+    border: 2px solid #121212;
+    border-radius: 6px;
+    line-height: 50px;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgb(0,0,0,0.4);
+    font-weight: 600;
+    color: #00e5ff;
+    cursor: pointer;
+
+}
+/* increasing button size */
+.capslock,.entre,.shift,.shift1{
+    grid-column: span 2;
+}
+.ctrl{
+    grid-column: span 2;
+}
+.space{
+    grid-column: span 6;
+}
+.backspace{
+    grid-column: span 2;
+}
+/* button hover  */
+button:hover{
+    background:#223041;
+    color:#00f7ff;
+}
